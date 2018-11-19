@@ -1,4 +1,18 @@
-== Description ==
+# Hide Singular #
+**Tags:** gutenberg,hide,singular,single,post  
+**Donate link:** https://waterproof-webdesign.info/donate  
+**Contributors:** [jhotadhari](https://profiles.wordpress.org/jhotadhari)  
+**Tested up to:** 4.9.8  
+**Requires at least:** 4.9.6  
+**Requires PHP:** 5.6  
+**Stable tag:** trunk  
+**License:** GNU General Public License v2 or later  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+
+Hide singular view for a specific postHide singular view for a specific post
+
+
+## Description ##
 
 Adds an option to the gutenberg editor status panel to hide the singular view for the specific post or custom post type.
 
@@ -12,9 +26,15 @@ Helper function to check if a post is hidden: ```hisi_post_is_hidden( $post_id )
 
 > This Plugin is generated with [generator-pluginboilerplate version 1.2.5](https://github.com/jhotadhari/generator-pluginboilerplate)
 
-== Installation ==
+## Installation ##
 Upload and install this Plugin the same way you'd install any other plugin.
 
-== Screenshots ==
+## Screenshots ##
 
-== Upgrade Notice ==
+## Upgrade Notice ##
+
+## Changelog ##
+
+0.0.1
+tested with gutenberg v4.4.0
+

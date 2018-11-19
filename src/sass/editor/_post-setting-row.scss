@@ -1,0 +1,35 @@
+
+.components-panel__row.hisi-post-setting-row {
+
+    input:invalid {
+        border-color: red !important;
+        &:focus {
+            box-shadow: 0 0 0 1px red;
+        }
+    }
+
+    & > * {
+        margin-top: 1em;
+        width: 100%;
+        & > .components-base-control {
+            width: 100%;
+            & > .components-base-control__field {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                & > * {
+                    flex-grow: 1;
+
+                    &.components-toggle-control {
+                        flex-grow: 0;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+}

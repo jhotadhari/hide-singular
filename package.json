@@ -5,7 +5,7 @@
   "uri": "https://waterproof-webdesign.info/wppr_project/hide-singular",
   "textDomain": "hisi",
   "domainPath": "/languages",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hide singular view for a specific postHide singular view for a specific post",
   "main": "index.js",
   "scripts": {
@@ -50,6 +50,8 @@
     "gruntify-eslint": "^4.0.0",
     "jstify": "^0.14.0",
     "load-grunt-tasks": "^3.5.2",
+    "node-bourbon": "^4.2.8",
+    "prop-types": "^15.6.2",
     "sort-object": "^3.0.2",
     "time-grunt": "^1.4.0",
     "underscore": "^1.9.1"

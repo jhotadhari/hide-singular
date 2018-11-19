@@ -13,10 +13,10 @@ module.exports = {
 		// 	'susy',
 		// 	'breakpoint'
 		// ],
-		// loadPath: [
-		// 	require('node-bourbon').includePaths,
-		// 	'node_modules/bootstrap-sass/assets/stylesheets',
-		// ]
+		loadPath: [
+			require('node-bourbon').includePaths,
+			// 'node_modules/bootstrap-sass/assets/stylesheets',
+		]
 	},
 
 	dist: {
