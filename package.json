@@ -6,7 +6,7 @@
   "textDomain": "hisi",
   "domainPath": "/languages",
   "version": "0.0.1",
-  "description": "Hide singular view for a specific postHide singular view for a specific post",
+  "description": "Hide singular view for a specific post",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,8 @@
   "licenseUri": "http://www.gnu.org/licenses/gpl-2.0.html",
   "tags": "gutenberg,hide,singular,single,post",
   "donateLink": "https://waterproof-webdesign.info/donate",
-  "wpVersionTested": "4.9.8",
-  "wpRequiresAtLeast": "4.9.6",
+  "wpVersionTested": "5.0",
+  "wpRequiresAtLeast": "5.0",
   "phpRequiresAtLeast": "5.6",
   "devDependencies": {
     "@babel/core": "^7.1.2",

@@ -5,7 +5,7 @@
 /**
  * Wordpress dependencies
  */
-const { __, setLocaleData } = wp.i18n;
+const { __ } = wp.i18n;
 const { registerPlugin } = wp.plugins;
 const { select } = wp.data;
 const { Fragment } = wp.element;
@@ -19,11 +19,6 @@ import composeWithPostSettings		from './hisi_editor_plugin_editor/components/com
 
 // compose components
 const PostSettingsStickyComponent = composeWithPostSettings( RawPostSettingsToogleComponent, 'hisi_hide_singular' );
-
-setLocaleData( hisiData.locale, 'hisi' );
-
-// helpChecked={ 'will be listed' }
-// helpUnchecked={ 'won\'t be listed' }
 
 const HisiPostStatusInfo = () => (
     <Fragment>

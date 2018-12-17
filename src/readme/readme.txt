@@ -6,7 +6,7 @@ Visitors trying to access the singular view will be redirected to the home page.
 
 Currently redirecting with status code 301.
 
-Uses the post meta key ```hisi_hide_singular```. If post is hidden, option is '1', otherwise metakey is removed and setting is empty.
+Uses the post meta key ```hisi_hide_singular```. If post is hidden, setting is '1', otherwise metakey is removed and setting is empty.
 
 Helper function to check if a post is hidden: ```hisi_post_is_hidden( $post_id )```, returns boolean.
 

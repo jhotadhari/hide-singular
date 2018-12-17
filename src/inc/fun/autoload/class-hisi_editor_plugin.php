@@ -40,11 +40,8 @@ class Hisi_Editor_Plugin {
 
 	protected function get_localize_data(){
 		global $post;
-
 		if ( ! $post instanceof WP_Post ) return array();
-
 		return array(
-			'locale' => gutenberg_get_jed_locale_data( 'hisi' ),
 			'post_types' => $this->get_post_types(),
 		);
 	}
@@ -73,7 +70,7 @@ class Hisi_Editor_Plugin {
 		);
 
 		wp_localize_script( $handle, 'hisiData', $this->get_localize_data() );
-
+		wp_set_script_translations( $handle, 'hisi', Hisi_Hide_Singular::plugin_dir_path() . 'languages' );
 		wp_enqueue_script( $handle );
 
 		wp_register_style(
