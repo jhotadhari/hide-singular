@@ -1,1 +1,11 @@
-td.hisi_hide_singular.column-hisi_hide_singular{text-align:center}td.hisi_hide_singular.column-hisi_hide_singular .dashicons-hidden{color:gray}td.hisi_hide_singular.column-hisi_hide_singular .dashicons-visibility{color:green}
+td.hisi_hide_singular.column-hisi_hide_singular {
+  text-align: center;
+}
+
+td.hisi_hide_singular.column-hisi_hide_singular .dashicons-hidden {
+  color: gray;
+}
+
+td.hisi_hide_singular.column-hisi_hide_singular .dashicons-visibility {
+  color: green;
+}
