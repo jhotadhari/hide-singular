@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/js/hisi_editor_plugin_editor.js:36
+msgid "Hide Singular View"
+msgstr ""
