@@ -1,6 +1,9 @@
 {
   "name": "hide-singular",
-  "fullName": "Hide Singular",
+  "displayName": "Hide Singular",
+  "projectType": "plugin",
+  "repositoryUri": "https://github.com/jhotadhari/hide-singular",
+
   "funcPrefix": "hisi",
   "uri": "https://waterproof-webdesign.info/wppr_project/hide-singular",
   "textDomain": "hisi",
