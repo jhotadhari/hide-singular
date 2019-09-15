@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "gruntify-eslint": "^5.0.0",
     "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.5"
   },
   "browserify-shim": {
