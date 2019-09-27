@@ -39,6 +39,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 ## Changelog ##
 
+## 0.1.3 - 2019-09-27
+Fixes
+
+### Fixed
+- filter `hisi_post_types`
+
 ## 0.1.2 - 2019-09-16
 Fix project_kind in project init args
 
