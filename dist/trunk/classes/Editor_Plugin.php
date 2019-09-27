@@ -14,8 +14,6 @@ class Editor_Plugin {
 
 	protected static $instance = null;
 
-	protected $post_types;
-
 	public static function get_instance() {
 		if ( null === self::$instance ) {
 			self::$instance = new self();
@@ -30,9 +28,12 @@ class Editor_Plugin {
 	}
 
 	public function get_post_types(){
-		if ( empty( $this->post_types ) )
-			$this->post_types = apply_filters( 'hisi_post_types', wde\utils\Post_Type::get_all() );
-		return $this->post_types;
+		$post_types = apply_filters( 'hisi_post_types_set', array() );
+		$post_types = empty( $post_types )
+			? wde\utils\Post_Type::get_all()
+			: $post_types;
+
+		return apply_filters( 'hisi_post_types', $post_types );
 	}
 
 	/**
