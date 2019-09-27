@@ -1,3 +1,8 @@
 {
-  "changes": []
+  "changes": [
+    {
+      "type": "fixed",
+      "message": "filter `hisi_post_types`"
+    }
+  ]
 }
