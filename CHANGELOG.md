@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.4 - 2019-11-29
+Updated to generator-wp-dev-env#0.10.10
+
+### Changed
+- Updated to generator-wp-dev-env#0.10.10 ( wp-dev-env-grunt#0.8.9 wp-dev-env-frame#0.7.6 )
+
 ## 0.1.3 - 2019-09-27
 Fixes
 
