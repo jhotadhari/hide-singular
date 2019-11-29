@@ -2,14 +2,14 @@
   "name": "hide-singular",
   "displayName": "Hide Singular",
   "funcPrefix": "hisi",
-  "uri": "https://waterproof-webdesign.info/wppr_project/hide-singular",
+  "uri": "https://github.com/jhotadhari/hide-singular",
   "textDomain": "hisi",
   "domainPath": "/languages",
   "version": "0.0.0",
-  "description": "Hide singular view for a specific postHide singular view for a specific post",
+  "description": "Hide singular view for a specific post",
   "main": "index.js",
   "author": "jhotadhari",
-  "authorUri": "https://waterproof-webdesign.info",
+  "authorUri": "https://github.com/jhotadhari",
   "projectType": "plugin",
   "contributors": "jhotadhari",
   "license": "GNU General Public License v2 or later",
@@ -17,20 +17,18 @@
   "tags": "gutenberg,hide,singular,single,post",
   "donateLink": "https://waterproof-webdesign.info/donate",
   "repositoryUri": "https://github.com/jhotadhari/hide-singular",
-  "wpVersionTested": "4.9.8",
-  "wpRequiresAtLeast": "4.9.6",
-  "phpRequiresAtLeast": "5.6",
+  "wpVersionTested": "5.2.3",
+  "wpRequiresAtLeast": "5.0.0",
+  "phpRequiresAtLeast": "7.0.0",
   "generator": {
-    "version": "0.10.3"
+    "version": "0.10.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
-    "grunt-contrib-clean": "^2.0.0",
-    "gruntify-eslint": "^5.0.0",
-    "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.5"
+    "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.8"
   },
   "browserify-shim": {
     "jquery": "global:jQuery",
