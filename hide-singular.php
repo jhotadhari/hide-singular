@@ -3,7 +3,7 @@
 	Plugin Name: Hide Singular
 	Plugin URI: https://github.com/jhotadhari/hide-singular
 	Description: Hide singular view for a specific post
-	Version: 0.1.3
+	Version: 0.1.4
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
