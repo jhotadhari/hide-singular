@@ -2,8 +2,7 @@
 /**
  * Hide Singular Plugin init
  *
- * @package WordPress
- * @subpackage hide-singular
+ * @package hide-singular
  */
 
 // If this file is called directly, abort.
