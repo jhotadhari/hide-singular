@@ -8,12 +8,12 @@ if ( ! defined( 'WPINC' ) ) {
 function hisi_include_fun() {
 
 	$paths = array(
-		'/inc/fun/hisi_expa_remove_link.php',
-		'/inc/fun/hisi_get_redirect_url.php',
-		'/inc/fun/hisi_post_is_hidden.php',
-		'/inc/fun/hisi_redirect_singular.php',
-		'/inc/fun/hisi_register_meta.php',
-		'/inc/fun/hisi_wpseo_breadcrumb_remove_link.php',
+		'inc/fun/hisi_expa_remove_link.php',
+		'inc/fun/hisi_get_redirect_url.php',
+		'inc/fun/hisi_post_is_hidden.php',
+		'inc/fun/hisi_redirect_singular.php',
+		'inc/fun/hisi_register_meta.php',
+		'inc/fun/hisi_wpseo_breadcrumb_remove_link.php',
 	);
 
 	if ( count( $paths ) > 0 ) {
