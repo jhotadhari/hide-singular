@@ -57,22 +57,19 @@ class RawPostSettingsToogleComponent extends Component {
 			onUpdatePostAttribute( { [metaKey]: newMeta ? '1' : '0' } );
 		};
 
-		return [
+		return <div className="components-panel__row">
 
-			<div className="components-panel__row">
+			<BaseControl
+				label={ label }
+				help={ parseInt( meta ) === 1 ? helpChecked : helpUnchecked }
+			>
+				<ToggleControl
+					checked={ parseInt( meta ) === 1 }
+					onChange={ onChange }
+				/>
+			</BaseControl>
 
-				<BaseControl
-					label={ label }
-					help={ parseInt( meta ) === 1 ? helpChecked : helpUnchecked }
-				>
-					<ToggleControl
-						checked={ parseInt( meta ) === 1 }
-						onChange={ onChange }
-					/>
-				</BaseControl>
-
-			</div>
-		];
+		</div>;
 	}
 }
 
