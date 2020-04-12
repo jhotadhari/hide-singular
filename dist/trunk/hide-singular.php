@@ -3,7 +3,7 @@
 	Plugin Name: Hide Singular
 	Plugin URI: https://github.com/jhotadhari/hide-singular
 	Description: Hide singular view for a specific post
-	Version: 0.1.5
+	Version: 0.1.6
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
@@ -31,7 +31,7 @@ include_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
 function hisi_init() {
 
 	$init_args = array(
-		'version'		=> '0.1.5',
+		'version'		=> '0.1.6',
 		'slug'			=> 'hide-singular',
 		'name'			=> 'Hide Singular',
 		'prefix'		=> 'hisi',
@@ -40,9 +40,9 @@ function hisi_init() {
 		'FILE_CONST'	=> __FILE__,
 		'db_version'	=> 0,
 		'wde'			=> array(
-			'generator-wp-dev-env'	=> '0.12.0',
-			'wp-dev-env-grunt'		=> '0.9.5',
-			'wp-dev-env-frame'		=> '0.7.6',
+			'generator-wp-dev-env'	=> '0.14.1',
+			'wp-dev-env-grunt'		=> '0.9.6',
+			'wp-dev-env-frame'		=> '0.8.0',
 		),
 		'deps'			=> array(
 			'php_version'	=> '7.0.0',		// required php version

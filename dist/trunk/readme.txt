@@ -39,6 +39,15 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 == Changelog ==
 
+## 0.1.6 - 2020-04-12
+Update dependencies
+
+### Changed
+- Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )
+
+### Fixed
+- Warning 'Each child in a list should have a unique "key" prop.'
+
 ## 0.1.5 - 2020-02-05
 Update dependencies
 
