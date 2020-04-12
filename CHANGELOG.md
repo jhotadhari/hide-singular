@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.6 - 2020-04-12
+Update dependencies
+
+### Changed
+- Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )
+
+### Fixed
+- Warning 'Each child in a list should have a unique "key" prop.'
+
 ## 0.1.5 - 2020-02-05
 Update dependencies
 
