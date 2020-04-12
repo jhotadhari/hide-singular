@@ -3,6 +3,10 @@
     {
       "type": "fixed",
       "message": "Warning 'Each child in a list should have a unique \"key\" prop.'"
+	},
+	{
+      "type": "changed",
+      "message": "Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )"
     }
   ]
 }
