@@ -1,3 +1,8 @@
 {
-  "changes": []
+  "changes": [
+    {
+      "type": "changed",
+      "message": "Updated to generator-wp-dev-env#0.14.4 ( wp-dev-env-grunt#0.9.9 wp-dev-env-frame#0.8.0 )"
+    }
+  ]
 }
