@@ -13,6 +13,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../classes/Hisi.php:52
+#: ../classes/Hisi.php:54
 msgid "Singular view"
 msgstr ""
