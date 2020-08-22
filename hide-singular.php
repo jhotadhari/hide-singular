@@ -1,9 +1,9 @@
 <?php
 /*
-	Plugin Name: Hide Singular
+	Plugin Name: Croox Hide Singular
 	Plugin URI: https://github.com/jhotadhari/hide-singular
 	Description: Hide singular view for a specific post
-	Version: 0.1.7
+	Version: 0.1.8
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later

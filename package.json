@@ -5,7 +5,7 @@
   "uri": "https://github.com/jhotadhari/hide-singular",
   "textDomain": "hisi",
   "domainPath": "/languages",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Hide singular view for a specific post",
   "main": "index.js",
   "author": "jhotadhari",
