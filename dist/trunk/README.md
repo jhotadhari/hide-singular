@@ -1,4 +1,4 @@
-# Hide Singular #
+# Croox Hide Singular #
 **Tags:** gutenberg,hide,singular,single,post  
 **Donate link:** https://waterproof-webdesign.info/donate  
 **Contributors:** [jhotadhari](https://profiles.wordpress.org/jhotadhari)  
@@ -38,6 +38,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 # 
 
 ## Changelog ##
+
+## 0.1.8 - 2020-08-22
+Updated to generator-wp-dev-env#0.16.0 ( wp-dev-env-grunt#0.11.1 wp-dev-env-frame#0.11.0 )
+
+### Changed
+- Updated to generator-wp-dev-env#0.16.0 ( wp-dev-env-grunt#0.11.1 wp-dev-env-frame#0.11.0 )
 
 ## 0.1.7 - 2020-07-27
 Update deps
