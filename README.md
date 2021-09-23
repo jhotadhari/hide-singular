@@ -1,4 +1,4 @@
-WordPress Plugin Hide Singular
+WordPress Plugin Croox Hide Singular
 
 Hide singular view for a specific post
 
@@ -6,7 +6,7 @@ Hide singular view for a specific post
 
 # Download and install
 
-~~**Hide Singular** is [available in the official WordPress Plugin repository](https://wordpress.org/plugins/hide-singular/). You can install this plugin the same way you'd install any other plugin.~~
+~~**Croox Hide Singular** is [available in the official WordPress Plugin repository](https://wordpress.org/plugins/hide-singular/). You can install this plugin the same way you'd install any other plugin.~~
 
 To install it from zip file, [download latest release](https://github.com/jhotadhari/hide-singular/releases/latest).
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Hide Singular Plugin init
+ * Croox Hide Singular Plugin init
  *
  * @package hide-singular
  */
