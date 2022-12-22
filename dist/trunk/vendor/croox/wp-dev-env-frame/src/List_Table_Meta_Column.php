@@ -49,28 +49,38 @@ class List_Table_Meta_Column {
 	}
 
 	public function hooks( $screen ) {
-
-		if ( ( ! in_array( $screen->post_type, $this->post_types ) ) || 'edit' !== $screen->base )
+		if (
+			! in_array( $screen->post_type, $this->post_types )
+		 	|| ! in_array( $screen->base, array( 'edit', 'upload' ) )
+		) {
 			return;
+		}
 
 		foreach( $this->post_types as $post_type ){
 
 			// add column
-			add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_column' ), intval( $this->column['add_column_priority'], 10 ) );
+			if ( 'attachment' === $post_type ) {
+				add_filter( 'manage_media_columns', array( $this, 'add_column' ), intval( $this->column['add_column_priority'], 10 ) );
+			} else {
+				add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_column' ), intval( $this->column['add_column_priority'], 10 ) );
+			}
 
 			// render column
-			$render_cb = is_string( $this->column['render_cb'] ) && ! empty( $this->column['render_cb'] )
-				|| ( is_array( $this->column['render_cb'] ) && 2 === count( $this->column['render_cb'] ) )
+			$render_cb = ! empty( $this->column['render_cb'] ) && is_callable( $this->column['render_cb'] )
 				? $this->column['render_cb']
 				: array( $this, 'render_column' );
-			add_action( 'manage_' . $post_type . '_posts_custom_column', $render_cb, 10, 2 );
+
+			if ( 'attachment' === $post_type ) {
+				add_action( 'manage_media_custom_column', $render_cb, 10, 2 );
+			} else {
+				add_action( 'manage_' . $post_type . '_posts_custom_column', $render_cb, 10, 2 );
+			}
 
 			// may be sortable
 			if ( $this->column['sortable'] ) {
-				add_filter( 'manage_edit-' . $post_type . '_sortable_columns', array( $this, 'make_column_sortable' ) );
-
-				$order_by_cb = is_string( $this->column['order_by_cb'] ) && ! empty( $this->column['order_by_cb'] )
-					|| ( is_array( $this->column['order_by_cb'] ) && 2 === count( $this->column['order_by_cb'] ) )
+				add_filter( "manage_{$screen->id}_sortable_columns", array( $this, 'make_column_sortable' ) );
+				
+				$order_by_cb = ! empty( $this->column['order_by_cb'] ) && is_callable( $this->column['order_by_cb'] )
 					? $this->column['order_by_cb']
 					: array( $this, 'order_by' );
 				add_action( 'pre_get_posts', $order_by_cb );
@@ -107,10 +117,7 @@ class List_Table_Meta_Column {
 
 	public function render_column( $column, $post_id ) {
 		if( $column === $this->column['key'] ) {
-			if (
-				( is_string( $this->column['render_inner_cb'] ) && ! empty( $this->column['render_inner_cb'] ) )
-				|| ( is_array( $this->column['render_inner_cb'] ) && 2 === count( $this->column['render_inner_cb'] ) )
-			) {
+			if ( ! empty( $this->column['render_inner_cb'] ) && is_callable( $this->column['render_inner_cb'] ) ) {
 				call_user_func_array( $this->column['render_inner_cb'] , array( $column, $post_id, $this ) );
 			} else {
 				echo get_post_meta( $post_id, $this->column['metakey'], true );
@@ -131,10 +138,7 @@ class List_Table_Meta_Column {
 		$orderby = $query->get( 'orderby');
 
 		if( $this->column['metakey'] === $orderby ) {
-			if (
-				( is_string( $this->column['order_by_inner_cb'] ) && ! empty( $this->column['order_by_inner_cb'] ) )
-				|| ( is_array( $this->column['order_by_inner_cb'] ) && 2 === count( $this->column['order_by_inner_cb'] ) )
-			) {
+			if ( ! empty( $this->column['order_by_inner_cb'] ) && is_callable( $this->column['order_by_inner_cb'] ) ) {
 				call_user_func_array( $this->column['order_by_inner_cb'] , array( $query, $this ) );
 			} else {
 				$query->set( 'meta_key', $this->column['metakey'] );
