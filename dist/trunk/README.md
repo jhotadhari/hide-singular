@@ -39,6 +39,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 ## Changelog ##
 
+## 0.1.12 - 2025-08-20
+Fix PHP Notice:  Undefined index: url
+
+### Fixed
+- PHP Notice:  Undefined index: url
+
 ## 0.1.11 - 2022-12-22
 Update dependecies
 
