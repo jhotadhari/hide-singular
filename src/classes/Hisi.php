@@ -26,10 +26,11 @@ class Hisi extends wde\Plugin {
 
 	public function initialize() {
 
-		// // Run Updates when plugin version changes.
-		// add_filter( $this->prefix . '_update_version', function( $success, $new_version, $old_version ) {
-		// 	return $success;
-		// }, 10, 3 );
+		// Run Updates when plugin version changes.
+		add_filter( $this->prefix . '_update_version', function( $success, $new_version, $old_version ) {
+			Remember_Hidden::update_transient();
+			return $success;
+		}, 10, 3 );
 
 		// // Run Updates when plugin db_version changes.
 		// add_filter( $this->prefix . '_update_db_version', function( $success, $new_db_version, $old_db_version ) {
@@ -53,7 +54,7 @@ class Hisi extends wde\Plugin {
 		add_action( 'admin_init', array( $this, 'list_table_column' ), 10 );
 
 		Editor_Plugin::get_instance();
-
+		Remember_Hidden::init();
 
 	}
 
