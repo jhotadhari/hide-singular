@@ -154,6 +154,7 @@ class ComposerStaticInit872efd9aecc945f18dcbe09c383c8021
         'hisi\\Editor_Plugin' => __DIR__ . '/../..' . '/classes/Editor_Plugin.php',
         'hisi\\Hisi' => __DIR__ . '/../..' . '/classes/Hisi.php',
         'hisi\\Register_Meta' => __DIR__ . '/../..' . '/classes/Register_Meta.php',
+        'hisi\\Remember_Hidden' => __DIR__ . '/../..' . '/classes/Remember_Hidden.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -39,6 +39,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 ## Changelog ##
 
+## 0.2.0 - 2025-11-08
+Hide hidden posts from search results
+
+### Changed
+- Hide hidden posts from search results
+
 ## 0.1.12 - 2025-08-20
 Fix PHP Notice:  Undefined index: url
 
