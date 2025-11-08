@@ -13,6 +13,7 @@ function hisi_include_fun() {
 		'inc/fun/hisi_post_is_hidden.php',
 		'inc/fun/hisi_redirect_singular.php',
 		'inc/fun/hisi_register_meta.php',
+		'inc/fun/hisi_search_exclude.php',
 		'inc/fun/hisi_wpseo_breadcrumb_remove_link.php',
 	);
 

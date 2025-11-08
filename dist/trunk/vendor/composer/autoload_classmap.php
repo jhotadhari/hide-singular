@@ -123,4 +123,5 @@ return array(
     'hisi\\Editor_Plugin' => $baseDir . '/classes/Editor_Plugin.php',
     'hisi\\Hisi' => $baseDir . '/classes/Hisi.php',
     'hisi\\Register_Meta' => $baseDir . '/classes/Register_Meta.php',
+    'hisi\\Remember_Hidden' => $baseDir . '/classes/Remember_Hidden.php',
 );
