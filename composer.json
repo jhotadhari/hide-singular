@@ -1,9 +1,11 @@
 {
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {},
+  "require": {
+    "php": ">=7.0.0"
+  },
   "require-dev": {
-    "croox/wp-dev-env-frame": "0.15.0",
+    "croox/wp-dev-env-frame": "0.17.0",
     "composer/installers": "*"
   },
   "repositories": [
@@ -15,6 +17,11 @@
   "autoload": {
     "psr-4": {
       "hisi\\": "src/classes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
     }
   }
 }
