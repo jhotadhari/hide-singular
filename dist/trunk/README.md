@@ -36,8 +36,17 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 
 # 
-
 ## Changelog ##
+
+## 0.2.1 - 2026-08-14
+Updated dependencies and PHP compatibility
+
+### Changed
+- Updated to generator-wp-dev-env#1.7.4 ( wp-dev-env-grunt#1.7.0 wp-dev-env-frame#0.17.1 )
+
+### Fixed
+- PHP 8.2+ compatibility fixes
+- Fix translation loading before init
 
 ## 0.2.0 - 2025-11-08
 Hide hidden posts from search results
