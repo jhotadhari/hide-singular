@@ -38,6 +38,16 @@ Upload and install this Theme the same way you'd install any other Theme.
 # 
 == Changelog ==
 
+## 0.2.2 - 2026-08-25
+Hardened frame classMap strip condition
+
+### Changed
+- Updated to generator-wp-dev-env#1.7.6 ( wp-dev-env-grunt#1.7.2 wp-dev-env-frame#0.17.1 )
+- Build patch: classMap strip condition uses `class_exists( "croox\wde\Project", false )` instead of `is_plugin_active( ... )`
+
+## 0.2.2 - 2026-08-25
+Hardened frame classMap strip condition
+
 ## 0.2.1 - 2026-08-14
 Updated dependencies and PHP compatibility
 
