@@ -3,7 +3,7 @@
 	Plugin Name: Croox Hide Singular
 	Plugin URI: https://github.com/jhotadhari/hide-singular
 	Description: Hide singular view for a specific post
-	Version: 0.2.1
+	Version: 0.2.2
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
@@ -31,7 +31,7 @@ include_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
 function hisi_init() {
 
 	$init_args = array(
-		'version'		=> '0.2.1',
+		'version'		=> '0.2.2',
 		'slug'			=> 'hide-singular',
 		'name'			=> 'Croox Hide Singular',
 		'prefix'		=> 'hisi',
@@ -41,7 +41,7 @@ function hisi_init() {
 		'db_version'	=> 0,
 		'wde'			=> array(
 			'generator-wp-dev-env'	=> '1.7.2',
-			'wp-dev-env-grunt'		=> '1.7.0',
+			'wp-dev-env-grunt'		=> '1.7.2',
 			'wp-dev-env-frame'		=> '0.17.1',
 		),
 		'deps'			=> array(
